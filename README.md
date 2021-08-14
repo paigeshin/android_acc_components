@@ -248,7 +248,7 @@ class MainActivity : AppCompatActivity() {
 
 # Parcelable argument
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/febcec7b-6cd5-4a6b-9dac-5aa2e42de1ee/Untitled.png)
+![img](./img1.png)
 
 ```kotlin
 @Entity(tableName = "todo_table")
@@ -778,7 +778,7 @@ override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
 
 - Observe once extension
 
-⇒ This is necessary for search query, otherwise, multiple calls. 
+⇒ This is necessary for search query, otherwise, multiple calls.
 
 ```kotlin
 fun <T> LiveData<T>.observeOnce(lifecycleOwner: LifecycleOwner, observer: Observer<T>) {
@@ -897,10 +897,10 @@ override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
- 
+
         // Hide soft keyboard
         hideKeyboard(requireActivity())
-        
+
         return binding.root
     }
 ```
@@ -939,9 +939,9 @@ android:fullBackupContent="true"
 
 # Set Navigation PopTo
 
-![Screen Shot 2021-08-14 at 9.10.07 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9da88ae6-2da1-4d56-92de-7dab5a6cd9d0/Screen_Shot_2021-08-14_at_9.10.07_PM.png)
+![img](./img2.png)
 
-⇒ If you set this, fragment won't remain in backstack 
+⇒ If you set this, fragment won't remain in backstack
 
 When navigating using NavDeepLinkRequest, the back stack is not reset. This behavior is unlike other deep link navigation, where the back stack is replaced when navigating. popUpTo and popUpToInclusive still remove destinations from the back stack just as though you had navigated using an ID.
 
